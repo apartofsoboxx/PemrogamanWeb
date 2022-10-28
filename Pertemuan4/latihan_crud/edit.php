@@ -1,9 +1,6 @@
 <?php
-
 include_once("config.php");
-
 $id = $_GET['id'];
-
 $result = mysqli_query($conn_db, "SELECT * FROM customers WHERE id=$id");
 if(!$result){
     header("Location:index.php");
